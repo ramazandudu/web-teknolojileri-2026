@@ -1,0 +1,138 @@
+a{
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.navbar{
+    background-color: aliceblue;
+    justify-content: center;
+}
+
+.about-me-heading{
+    margin-top: 75px;
+}
+
+.currency-heading{
+    padding-bottom: 25px;
+}
+
+.split{
+    border: none;
+    border-top: 5px solid black;
+    max-width: 1250px;
+    margin: 25px auto;
+}
+
+.snowflake-icon{
+    position: relative;
+    top: -70px;
+    background-color: white;
+    padding: 15px;
+}
+
+.p-about-me{
+    position: relative;
+    top: -50px;
+}
+
+.currency{
+    text-align: center;
+    position: relative;
+}
+
+.container>ul{
+    list-style-type: none;
+    position: relative;
+    top: -50px;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+}
+
+.my-hobbies{
+    margin-top: 75px;
+}
+
+.my-hobbies-heading{
+    padding: 25px;
+}
+
+.card{
+    margin: 15px;
+}
+
+.card:hover{
+    opacity: 0.8;
+}
+
+.card-img-top{
+    height: 200px;
+}
+
+.pens-heading{
+    padding-top: 50px;
+}
+
+.card-group{
+    padding-bottom: 50px;
+}
+
+.query-container{
+    padding-top: 150px;
+    text-align: center;
+}
+
+.query{
+    width: 15rem;
+}
+
+.query-heading{
+    text-align: center;
+}
+
+.carousel{
+    padding-top: 4%;
+}
+
+.carousel img{
+    height: 768px;
+    object-fit: cover;
+    width: 100%;   
+}
+
+.known-places-ul, .history-ul{
+    list-style: none;
+}
+
+section {
+    margin-bottom: 0; /* Sectionların altındaki boşluğu kaldırır */
+    margin-top: 0; /* Sectionların üstündeki boşluğu kaldırır */
+}
+
+.splitter{
+    margin-bottom: -200px;
+}
+
+.contact-header{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.form-container{
+    border-color: black;
+    border-radius: 1px;
+    border-style: dotted;
+}
+
+.gender-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.gender-labels span {
+    font-size: 0.9em;
+    color: #555;
+}

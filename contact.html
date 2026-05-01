@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="contact.js"></script>
+
+    <!-- React -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.22.16/babel.min.js"></script>
+    <script src="./react-form-validation.js" type="text/babel"></script>        
+</head>
+
+<body>
+    <header>
+        <!-- Nav Start -->
+        
+       
+
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://www.sakarya.edu.tr/"><img src="res/sakarya-university.png" alt=""
+                        height="50px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Ana Sayfa</a>
+                        </li>
+                        <li class="nav-item">
+                    <a class="nav-link" href="login.html">login</a>
+                  </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="movie-search.html">Film Ara</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="my-hobbies.html">Hobilerim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="my-country.html">Şehrim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">İletişim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="heritance.html">Mirasımız</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Nav Stop -->
+
+    </header>
+    <main>
+        <div class="contact-header">
+            <h1>İletişim</h1>
+        </div>
+        <div class="root"></div>
+        <div class="form-container container">
+            <form id="contact-form">
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row mb-4">
+                    <div class="col">
+                        <div data-mdb-input-init class="form-outline">
+                            <label class="form-label" for="form6Example1">İsim</label>
+                            <input type="text" id="name" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div data-mdb-input-init class="form-outline">
+                            <label class="form-label" for="form6Example2">Soyisim</label>
+                            <input type="text" id="lastname" class="form-control" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text input -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <label class="form-label" for="form6Example4">Adres</label>
+                    <input type="text" id="adress" class="form-control" />
+                </div>
+
+                <!-- Email input -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <label class="form-label" for="form6Example5">E-mail</label>
+                    <input type="email" id="email" class="form-control" />
+                </div>
+
+                <!-- Number input -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <label class="form-label" for="form6Example6">Telefon</label>
+                    <input type="number" id="phone" class="form-control" />
+                </div>
+
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <label class="form-label" for="gender">Cinsiyet</label>
+                    <input type="range" name="gender" id="gender" class="form-control" min="0" max="8" step="1">
+                    <div class="gender-labels">
+                        <span>Kadın</span>
+                       
+                        <span>Erkek</span>
+                    </div>
+                    <div class="selected-gender">
+                        Seçilen Cinsiyet: <span id="genderLabel"></span>
+                    </div>
+                </div>
+
+
+                <!-- Message input -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <label class="form-label" for="form6Example7">Ek Bilgi</label>
+                    <textarea class="form-control" id="info" rows="4"></textarea>
+                </div>
+
+                <!-- Submit button -->
+                <button data-mdb-ripple-init type="button" id="submit" class="btn btn-primary btn-block mb-4">Gönder</button>
+                <button class="btn btn-primary btn-block mb-4" id="submit-react">React ile Gönder</button>
+                <button data-mdb-ripple-init type="reset" class="btn btn-primary btn-block mb-4">Temizle</button>
+            </form>
+        </div>
+
+        <div class="container" id="contact-information">
+
+        </div>
+
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
