@@ -1,0 +1,29 @@
+
+.contact-header{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.form-container{
+    border-color: black;
+    border-radius: 1px;
+    border-style: dotted;
+}
+
+.gender-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.gender-labels span {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.btn{
+    margin-right: 25px;
+}
+.btn-container{
+    text-align: center;
+}
