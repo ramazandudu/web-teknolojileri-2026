@@ -40,7 +40,7 @@ https://github.com/ramazandudu/web-project
 <br>
 <ul>
 	<li>API Kullanılarak Film Arama Ekranı Eklendi</li>
-	<li>Ekranda Görüntülenen Filmlerin Üstüne Tıklayınca İlgili IMDB Sayfasına Yönlendirme Eklendi</li>
+	<li>Ekranda Görüntülenen Filmlerin Üstüne Tıklandığında İlgili IMDB Sayfasına Yönlendirme Eklendi</li>
 </ul>
 
 ## My-hobbies.html
